@@ -113,3 +113,14 @@ closeAllConnections()
 practice2L <- readRDS("DGRP_Spino3_GLM_results_2L.rds")
 ````
 <img width="242" height="109" alt="image" src="https://github.com/user-attachments/assets/20df70bc-fdd8-4f30-b47e-23aa4de3666f" />
+
+
+
+### Parallelization Time Comparison:
+## What typically happens when you run GLM in R (1 core):
+<img width="824" height="300" alt="image" src="https://github.com/user-attachments/assets/a06bfd08-22c9-426c-ab52-adb86e22c2ad" />
+
+## What happens when you parallelize with multiple cores (3 cores):
+<img width="828" height="313" alt="image" src="https://github.com/user-attachments/assets/5961803e-b5c3-4f4d-93e2-f2a49d64a8ca" />
+
+### 1.1 minutes vs 0.3 minutes, a 3.666667 increase in processing speed (WITH ONLY 3x, imagine 60 cores!!!)
